@@ -1,6 +1,14 @@
   header{
 	  display:flex;
 	  flex-direction:column;
+
+    @media (max-width:500px){
+	    width:100%;
+	    display:flex;
+	    flex-direction:column;
+    }
+
+	  
   }
 
 .home {
@@ -10,6 +18,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border:solid;
+
+    @media (max-width:500px){
+	    width:100%;
+	    display:flex;
+	    flex-direction:column;
+
+    .text-content {
+	     width: 100%;
+	     border:solid;
+	     padding-right: 1%;
+    }
+    .img-content {
+	     width: 100%;
+	     padding-left: 1%;
+
+    }
+    }//media end
 
    
     
@@ -58,9 +84,27 @@
     display: flex;
     justify-content: space-between;
 
+    @media  (max-width:500px){
+	    width:100%;
+	    font-size: 35px;
+	    display:flex;
+	    flex-direction:column;
+   }
+    
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    @media  (max-width:500px){
+	    width:100%;
+	    font-size: 35px;
+	    display:flex;
+	    flex-direction:column;
+	
+	.btn{
+		justify-content:center;
+		align-items:center;
+	  }
+	}
     }
   }
 }// home
